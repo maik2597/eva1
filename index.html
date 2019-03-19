@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="png" href="icon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -14,7 +15,29 @@
         crossorigin="anonymous"></script>
     <title>Periódicos Chilenos</title>
 
-<body style="background-color:rgb(54, 62, 70)"></body>
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #full-screen-background-image {
+            z-index: -999;
+            width: 100%;
+            height: auto;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+    </style>
+
+    <body>
+        <img alt="full screen background image" src="fondo.jpg" id="full-screen-background-image" />
+    </body>
+
 </head>
 
 <body>
@@ -23,22 +46,23 @@
             <h1>
                 <ul class="nav justify-content-center" style="color:snow">Periódicos Chilenos</ul>
             </h1>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
-                    aria-expanded="false">Opciones</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="http://www.facebook.com/sharer.php?u=http://www.periodicoschilenos.cl"
-                        target="_blank">Compartir en Facebook</a>
-                    <a class="dropdown-item" href="http://twitter.com/share?url=http://www.periodicoschilenos.cl&text=Todos los periódicos en un mismo lugar @periodicoschile"
-                        target="_blank">Compartir en Twitter</a>
-                    <a class="dropdown-item" href="https://itunes.apple.com/cl/app/periodicos-chilenos/id950796462"
-                        target="_blank">Descargar por iOS</a>
-                    <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.tachanfil.periodicoschilenos"
-                        target="_blank">Descargar para Android</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Creador</a>
-                </div>
-            </li>
+            <ul class="nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Opciones</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="http://www.facebook.com/sharer.php?u=http://www.periodicoschilenos.cl" target="_blank">Compartir en Facebook</a>
+                        <a class="dropdown-item" href="http://twitter.com/share?url=http://www.periodicoschilenos.cl&text=Todos los periódicos en un mismo lugar @periodicoschile"
+                            target="_blank">Compartir en Twitter</a>
+                        <a class="dropdown-item" href="https://itunes.apple.com/cl/app/periodicos-chilenos/id950796462" target="_blank">Descargar por iOS</a>
+                        <a class="dropdown-item" href="https://play.google.com/store/apps/details?id=com.tachanfil.periodicoschilenos" target="_blank">Descargar para Android</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Creador</a>
+                    </div>
+                </li>
+            </ul>
+            <h4 style="color:aliceblue">
+                <center>Es la app de noticias más usada de Chile. Es fácil de usar. Es práctica. Es gratuita.</center>
+            </h4>
         </nav>
     </header>
     <article>
@@ -52,38 +76,44 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="https://www.lacuarta.com/" target="_blank" alt="..."><img src="https://www.lacuarta.com/wp-content/uploads/2018/08/share_L4.png"
-                                class="d-block w-100"></a>
+                        <center>
+                            <a href="https://www.lacuarta.com/" target="_blank" alt="...">
+                                <img src="https://www.lacuarta.com/wp-content/uploads/2018/08/share_L4.png" style="width: 1000px;">
+                            </a>
 
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>General</h5>
-                            <p></p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.emol.com/" target="_blank" alt="..."><img src="https://s3-sa-east-1.amazonaws.com/lalegal/app/public/system/photos/8381/original/Logo-EMOL.jpg?1453300869"
-                                class="d-block w-100"></a>
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5 style="color:black">General</h5>
-                            <p style="color:black"> ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://www.latercera.com/" target="_blank" alt="..."><img src="https://s1.latercera.com/wp-content/uploads/2018/01/La-Terceraok.png"
-                                class="d-block w-100">
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>General</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h3>General</h3>
                             </div>
                     </div>
+                    </center>
                     <div class="carousel-item">
-                        <a href="https://www.lun.com/" target="_blank" alt="..."><img src="http://www.egomotos.cl/wp-content/uploads/2017/12/lun_fn2-1080x630.jpg?4f0629&4f0629"
-                                class="d-block w-100">
+                        <center>
+                            <a href="https://www.emol.com/" target="_blank" alt="...">
+                                <img src="https://s3-sa-east-1.amazonaws.com/lalegal/app/public/system/photos/8381/original/Logo-EMOL.jpg?1453300869" style="width: 1000px; height: 665px;">
+                            </a>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>General</h5>
-                                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                <h3 style="color:black">General</h3>
                             </div>
                     </div>
+                    </center>
+                    <div class="carousel-item">
+                        <center>
+                            <a href="https://www.latercera.com/" target="_blank" alt="...">
+                                <img src="https://s1.latercera.com/wp-content/uploads/2018/01/La-Terceraok.png" style="width: 1000px; height: 665px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>General</h3>
+                                </div>
+                    </div>
+                    </center>
+                    <div class="carousel-item">
+                        <center>
+                            <a href="https://www.lun.com/" target="_blank" alt="...">
+                                <img src="http://www.egomotos.cl/wp-content/uploads/2017/12/lun_fn2-1080x630.jpg?4f0629&4f0629" style="width: 1000px; height: 665px;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>General</h3>
+                                </div>
+                    </div>
+                    </center>
                 </div>
                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
